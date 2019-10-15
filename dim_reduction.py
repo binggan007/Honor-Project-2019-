@@ -65,7 +65,7 @@ def uMap(data, pdf):
     pdf.savefig()
     plt.close()
 
-# SAVE FIGS
+# SAVE FIGS; Output three figs as a three page pdf
 with PdfPages("Dimension_Reduction.pdf") as pdf:
     PCA(data, pdf)
     tSNE(data, pdf)
